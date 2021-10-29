@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# This script is used to add a new entry to a file named weRhere located in the Documents/ME461_2021/ of the current user.
+# If file does not exist, it creates and appends a new line with student information in a single line. 
+# If a user with the same ID as in the title of this script is being added, it shows a message saying that it already exists and does not reappend the same person.
+
+FILE=$HOME/Documents/ME461_2021/weRhere
+DIR=$HOME/Documents/ME461_2021/
+
+if [ ! -d "$DIR" ] ;                                                                                    # Search for the directory -d 
+    then
+        mkdir $DIR                                                                                      # echo "folder ME461_2021 does not exist, creating it."
+    fi
+
+if [ ! -f "$FILE" ] ;                                                                                   # Search for the file in this directory
+    then
+        echo "Ozgur Gulsuna, 2307668, ozgur.gulsuna@metu.edu.tr, group1" >> $FILE                       # If it does not exist create the document appending the first enty
+        echo "Added Record: Ozgur Gulsuna, 2307668, ozgur.gulsuna@metu.edu.tr, meturoam"                # Notify the user about the new record
+    else    
+        if grep -q -F "2307668" "$FILE" ;                                                               # If the file weRhere exists, search for specific student ID
+            then
+                echo "This Record Already Exists! Ozgur Gulsuna, 2307668 "                              # If the ID is the same as in the title, return "This Record Already Exists!"   
+            else
+                echo "Ozgur Gulsuna, 2307668, ozgur.gulsuna@metu.edu.tr, meturoam" >> $FILE             # If the file weRhere exists, but there is no such entry, append it to the bottom
+                echo "Added Record: Ozgur Gulsuna, 2307668, ozgur.gulsuna@metu.edu.tr, meturoam"        # Notify the user about the new record
+        fi
+fi
+
+# This script is written by ozgur gulsuna for ME461 Fall'21 as a first assignment.
+
+
