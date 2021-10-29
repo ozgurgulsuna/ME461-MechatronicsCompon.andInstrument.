@@ -1,0 +1,18 @@
+#Mehmet Baran Erol 2307577 baran.erol@metu.edu.tr meturoam
+
+#first we should check whether the string exists by using grep
+if grep -q  "Mehmet Baran Erol 2307577 baran.erol@metu.edu.tr meturoam" ~/Documents/ME461_2021/weRhere; then
+
+	#string exists so do this
+	echo "This line is already added to the file and will not be added once more."
+
+else
+	#string doesn't exist so do this
+	echo "Mehmet Baran Erol 2307577 baran.erol@metu.edu.tr meturoam"
+	echo "Mehmet Baran Erol 2307577 baran.erol@metu.edu.tr meturoam">>~/Documents/ME461_2021/weRhere
+
+#end of the if-else statement
+fi
+
+
+
