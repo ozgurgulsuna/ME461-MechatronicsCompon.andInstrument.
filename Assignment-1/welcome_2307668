@@ -26,6 +26,6 @@ if [ ! -f "$FILE" ] ;                                                           
         fi
 fi
 
-# This script is written by ozgur gulsuna for ME461 Fall'21 as a first assignment.
+# This script is written by ozgur gulsuna for ME461 Fall'21 as the first assignment.
 
 
