@@ -1,0 +1,85 @@
+cd / ------> root the main system location
+
+[ozgur@ozgur ~]$ ls -a    					//  -a is added to see all the files even hidden.
+
+[ozgur@ozgur ~]$ pwd      					// print working directory 
+
+[ozgur@ozgur ~]$ ls -l                                          // more detalied ls
+                           Size Date     
+drwxr-xr-x  3 ozgur ozgur  4096 Feb  8  2021  Applications
+ 
+
+
+
+[ozgur@ozgur ~]$ ls -lh                                         // ls -h and -l together
+
+total 324K
+drwxr-xr-x  3 ozgur ozgur 4.0K Feb  8  2021  Applications
+
+[ozgur@ozgur ~]$ echo "hello"                                   // echoes back the thing 
+[ozgur@ozgur ~]$ echo "hello there" > goodboy.txt               // 
+
+[ozgur@ozgur ~]$ man ls                                         // manual of ls or other things
+
+[ozgur@ozgur ~]$ tail test.txt                                  // last 10 lines of the thing 
+[ozgur@ozgur ~]$ head  test.txt                                 // first 10 lines of the thing 
+
+[ozgur@ozgur ~]$ ping google.com                                // pings google ctrl+c to exit 
+[ozgur@ozgur ~]$ ping -c 4 google.com                           // pings for 4 times
+
+[ozgur@ozgur ~]$ alias pong='ping -c -4 google.com'             // create an alias, aliasiez are deleted once the terminal is terminated 
+[ozgur@ozgur ~]$ pong
+
+PING google.com (142.250.187.174) 56(84) bytes of data.
+64 bytes from sof02s46-in-f14.1e100.net (142.250.187.174): icmp_seq=1 ttl=109 time=89.6 ms
+64 bytes from sof02s46-in-f14.1e100.net (142.250.187.174): icmp_seq=2 ttl=109 time=58.3 ms
+64 bytes from sof02s46-in-f14.1e100.net (142.250.187.174): icmp_seq=3 ttl=109 time=90.9 ms
+64 bytes from sof02s46-in-f14.1e100.net (142.250.187.174): icmp_seq=4 ttl=109 time=57.4 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 57.392/74.049/90.870/16.215 ms
+
+
+
+[ozgur@ozgur Lec-1]$ echo "print('hello world')" > test.py    // creating a basic pyton script
+
+Pale blue things are symbolic links
+
+[ozgur@ozgur ~]$  du -sh                                      // size of   
+[ozgur@ozgur ~]$  alias sizeof='du -sh'                       // size of something
+
+Aliases are FUN and practical
+
+[ozgur@ozgur ~]$ sudo pacman -S sl                            // sl SL SteamLocomotive just run it 
+
+#! /usr/bin/python3                                           // this turns it into an executable
+printf('hello');
+printf('world');
+
+remember to run an executable as ./
+for example ./runPy
+
+
+At regular or specific time intervals do something on the system we can use couple of features.
+a custom script we can use 
+CRONTAB
+
+
+Also there is NEOFETCH to see the properties of the os and the computer (Anıl Gülbeden)
+
+
+ssh and secureshell search it and do a headless boot
+
+
+
+[ozgur@ozgur ~]$ wc test.txt                                 // simple word/line count
+ 
+
+[ozgur@ozgur ~]$ 
+[ozgur@ozgur ~]$ 
+[ozgur@ozgur ~]$ 
+[ozgur@ozgur ~]$ 
+[ozgur@ozgur ~]$ 
+[ozgur@ozgur ~]$ 
+[ozgur@ozgur ~]$ 
